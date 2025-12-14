@@ -20,7 +20,7 @@ mongoose.connect(process.env.MONGO_URL, {
 // Routing Middleware
 app.use(express.json());
 app.use(cors({
-  origin: " http://localhost:5173/" // replace with your frontend URL in production
+  origin: "https://note-frontened-1.onrender.com/" // replace with your frontend URL in production
 }));
 
 app.use("/api/v1/notes", noteRoutes);
